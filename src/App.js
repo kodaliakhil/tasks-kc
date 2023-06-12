@@ -89,12 +89,12 @@ import './App.css';
 
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename='/tasks-kc'> 
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="*" element={<ErrorPage />} />
-      <Route path="/" element={<PrivateRoute> <ErrorBoundary fallback={<ErrorPage />}> <Header /> </ErrorBoundary> </PrivateRoute>}>
-        <Route path="/" element={<Home />} />
+      <Route path="/tasks-kc" element={<PrivateRoute> <ErrorBoundary fallback={<ErrorPage />}> <Header /> </ErrorBoundary> </PrivateRoute>}>
+        <Route path="/tasks-kc" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="services" element={<Services />} />
