@@ -95,15 +95,15 @@ const App = () => (
       <Route path="*" element={<ErrorPage />} />
       <Route path="/tasks-kc" element={<PrivateRoute> <ErrorBoundary fallback={<ErrorPage />}> <Header /> </ErrorBoundary> </PrivateRoute>}>
         <Route path="/tasks-kc" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="services" element={<Services />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="partners" element={<Partners />} />
-        <Route path="profile" element={<Profile />} />
-        <Route path="feedback" element={<Feedback />} />
-        <Route path="careers" element={<Careers />} />
-        <Route path="help" element={<Help />} />
+        <Route path="/tasks-kc/about" element={<About />} />
+        <Route path="/tasks-kc/contact" element={<Contact />} />
+        <Route path="/tasks-kc/services" element={<Services />} />
+        <Route path="/tasks-kc/projects" element={<Projects />} />
+        <Route path="/tasks-kc/partners" element={<Partners />} />
+        <Route path="/tasks-kc/profile" element={<Profile />} />
+        <Route path="/tasks-kc/feedback" element={<Feedback />} />
+        <Route path="/tasks-kc/careers" element={<Careers />} />
+        <Route path="/tasks-kc/help" element={<Help />} />
       </Route>
     </Routes>
 
