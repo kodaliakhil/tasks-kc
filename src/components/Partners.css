@@ -1,0 +1,179 @@
+.k-cell-inner {
+    font-weight: bold;
+
+}
+
+
+#cell1 {
+    border-bottom: 1px solid #dddddd;
+    border-right: none
+}
+
+#subtotal-row {
+    color: orange;
+    font-weight: bold;
+    background-color: #f1f0f0;
+}
+
+
+.top-collapse-container{
+    width: 100%;
+    height: 15px;
+    background-color: aqua;
+}
+
+.k-chip-actions{
+    display: none !important;
+}
+
+.k-chip{
+    background-color: transparent !important
+    ;
+    border: none !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.multipleSelection {
+    width: 300px;
+    background-color: #BCC2C1;
+  transition: 0.9s;
+
+}
+
+.selectBox {
+    position: relative;
+  transition: 0.9s;
+
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+  transition: 0.9s;
+
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.9s;
+
+}
+
+#checkBoxes {
+    display: none;
+    border: 1px #8DF5E4 solid;
+  transition: 0.9s;
+
+}
+
+#checkBoxes label {
+    display: block;
+  transition: 0.9s;
+
+}
+
+#checkBoxes label:hover {
+    background-color: #4F615E;
+    color: #ffffff;
+  transition: 0.9s;
+
+}
+
+.checkbox-dropdown{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px !important;
+
+
+}
+
+.k-chip-actions{
+    display: none;
+}
+.k-icon{
+    display: none;
+}
+.k-chip{
+    background-color: #FFFFFF !important;
+}
+.k-input-values{
+    background-color: #FFFFFF !important;
+}
+
+.multiselect {
+    width: 200px;
+
+  }
+  
+  .selectBox {
+    position: relative;
+
+  }
+  
+  .selectBox select {
+    width: 100%;
+    font-weight: bold;
+
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  transition: 0.9s;
+
+  }
+  
+  #checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+    background: #ffff;
+  transition: 0.5s;
+
+  }
+  
+  #checkboxes label {
+    display: block;
+
+  }
+  
+  #checkboxes label:hover {
+    background-color: #1e90ff;
+    color:#ffffff;
+  transition: 0.9s;
+
+  } 
+
+  .dropdown-cont{
+    z-index: 100; 
+    position: absolute; 
+    top: 70px; 
+    left: 400px; 
+    width: 250px;
+     direction: ltr;
+
+  }

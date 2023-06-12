@@ -1,0 +1,30 @@
+.home-container {
+  padding: 20px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.home-container::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.increase{
+  background-color: white;
+  color: black;
+  transition: all 0.3s;
+  padding: 4px;
+  border-radius: 5px;
+  width: 80px;
+  font-weight: 500;
+}
+.increase:hover{
+    background-color: black;
+    color: white;
+}

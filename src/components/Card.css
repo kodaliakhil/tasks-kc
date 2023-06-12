@@ -1,0 +1,39 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 280px;
+    margin: 10px;
+    /* overflow:hidden; */
+    text-decoration: none;
+    padding: 10px;
+    /* text-overflow: ellipsis; */
+    white-space:pre-line; 
+    border: 2px solid #deeceb;
+  }
+  
+  .card-container:hover{
+    transition: 0.3s;
+    box-shadow: 5px 5px 20px #b7dde3;
+    border-radius: 30px;
+  }
+  
+  
+  .card-heading{
+    font-size: 22px;
+    font-family: "Roboto";
+  }
+  
+  .card-link{
+    text-decoration: none;
+    font-size: 15px;
+  
+  }
+  
+  .card-description{
+    width: 200px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }

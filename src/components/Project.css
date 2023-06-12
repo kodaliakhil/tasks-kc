@@ -1,0 +1,313 @@
+.project-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 97vw;
+}
+
+.filter-container{
+    background-color: #f0f7f7;
+    border: 2px solid #adb2b3;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    justify-items: flex-start;
+    
+}
+
+.filter-names{
+    width: 90%;
+}
+
+.collapsed-container{
+    height: 50px;
+}
+
+.dropdown-icon{
+    font-size: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.table-side-filter-container{
+    display: flex;
+    flex-direction: row;
+    /* overflow: auto; */
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.side-filters{
+    min-width: 160px;
+    background-color: #f0f7f7;
+    border: 2px solid #adb2b3;
+    margin-top: 7px;
+    margin-right: 5px;
+    border-radius: 5px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.collapsed-side-filters{
+    min-width: 50px;
+}
+
+.side-filter-icon{
+    font-size: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+
+.table-container{
+    overflow: scroll;
+}
+
+.table-body{
+    display:block;
+    height:80vh;
+    overflow-y:scroll;
+}
+
+.table-header{
+    display: block;
+    max-width: 100%;
+}
+
+.sub-total-row{
+    background-color: #d0f2f1;
+    height: 26px;
+}
+
+.nums{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid black;
+    
+}
+
+.common-data{
+    margin-right: 30px;
+}
+
+.content{
+    background-color: #f0f7f7;
+}
+
+.sno{
+    min-width: 70px;
+    max-width: 70px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.totals{
+    color: #fa9c05;
+}
+
+.OrderNumber{
+    min-width: 130px;
+    max-width: 130px;
+}
+
+.VendorName{
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.DeliveryDate{
+    min-width: 170px;
+    max-width: 170px;
+}
+
+.ProdDesc{
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.CustomerName{
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.ShipToName{
+    min-width: 110px;
+    max-width: 110px;
+}
+
+.Addr1{
+    min-width: 110px;
+    max-width: 110px;
+}
+
+.CityName{
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.StateCode{
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.ZipCode{
+    min-width: 50px;
+    max-width: 50px;
+}
+
+.Gallons{
+    min-width: 85px;
+    max-width: 85px;
+}
+
+.ProductPrice{
+    min-width: 175px;
+    max-width: 160px;
+}
+
+.TaxPrice{
+    min-width: 96px;
+    max-width: 96px;
+}
+
+.Latitude{
+    min-width: 100px;
+    max-width: 100px;
+}
+.Longitude{
+    min-width: 100px;
+    max-width: 100px;
+}
+.Fees{
+    min-width: 75px;
+    max-width: 75px;
+}
+
+.FileName{
+    min-width: 60px;
+    max-width: 60px;
+}
+
+.LocationType{
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.AverageGross{
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.OPICity{
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.ProductID{
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.ProductUnitPrice{
+    min-width: 140px;
+    max-width: 140px;
+}
+
+.ProductID{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+.FreightUnitPrice{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+
+.AdditivePrice{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+
+.AdditiveUnitPrice{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+.TaxUnitPrice{
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.EnvironmentalFee{
+    min-width: 125px;
+    max-width: 125px;
+}
+
+.OtherFee{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+.DeliveryFee{
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.EquipmentFee{
+    min-width: 95px;
+    max-width: 95px;
+}
+
+.PageNumber{
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.TerminalGroupID{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+.FreightPrice{
+    min-width: 70px;
+    max-width: 70px;
+}
+
+
+.LoadingTime{
+    min-width: 75px;
+    max-width: 75px;
+}
+
+
+.SiteSetupTime{
+    min-width: 70px;
+    max-width: 70px;
+}
+
+
+.CustomerID{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+
+.StemTimeAndGMPerHr{
+    min-width: 90px;
+    max-width: 90px;
+}
+
