@@ -1,14 +1,14 @@
 import { Routes, Route } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 
-import { ErrorBoundary } from "react-error-boundary";
+// import { ErrorBoundary } from "react-error-boundary";
 
-import Login from './components/Login';
+// import Login from './components/Login';
 import Header from './components/Header.js'
 import { Home } from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-import PrivateRoute from './components/PrivateRoute'
+// import PrivateRoute from './components/PrivateRoute'
 import Services from './components/Serivces'
 import Projects from './components/Projects'
 import Partners from './components/Partners'
@@ -16,7 +16,7 @@ import Profile from './components/Profile'
 import Feedback from './components/Feedback'
 import Careers from './components/Careers'
 import Help from './components/Help'
-import ErrorPage from './components/ErrorPage.js'
+// import ErrorPage from './components/ErrorPage.js'
 // import ErrorBoundary from './components/ErrorBoundary';
 
 import './App.css';
@@ -88,26 +88,48 @@ import './App.css';
 // }
 
 
+// const App = () => (
+//   <BrowserRouter > 
+//     <Routes>
+//       <Route path="/login" element={<Login />} />
+//       <Route path="*" element={<ErrorPage />} />
+//       <Route path="/" element={<PrivateRoute> <ErrorBoundary fallback={<ErrorPage />}> <Header /> </ErrorBoundary> </PrivateRoute>}>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/contact" element={<Contact />} />
+//         <Route path="services" element={<Services />} />
+//         <Route path="projects" element={<Projects />} />
+//         <Route path="partners" element={<Partners />} />
+//         <Route path="profile" element={<Profile />} />
+//         <Route path="feedback" element={<Feedback />} />
+//         <Route path="careers" element={<Careers />} />
+//         <Route path="help" element={<Help />} />
+//       </Route>
+//     </Routes>
+
+//   </BrowserRouter>
+
+// )
+
 const App = () => (
-  <BrowserRouter basename='/tasks-kc'> 
+  // <BrowserRouter > 
     <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="*" element={<ErrorPage />} />
-      <Route path="/tasks-kc" element={<PrivateRoute> <ErrorBoundary fallback={<ErrorPage />}> <Header /> </ErrorBoundary> </PrivateRoute>}>
-        <Route path="/tasks-kc" element={<Home />} />
-        <Route path="/tasks-kc/about" element={<About />} />
-        <Route path="/tasks-kc/contact" element={<Contact />} />
-        <Route path="/tasks-kc/services" element={<Services />} />
-        <Route path="/tasks-kc/projects" element={<Projects />} />
-        <Route path="/tasks-kc/partners" element={<Partners />} />
-        <Route path="/tasks-kc/profile" element={<Profile />} />
-        <Route path="/tasks-kc/feedback" element={<Feedback />} />
-        <Route path="/tasks-kc/careers" element={<Careers />} />
-        <Route path="/tasks-kc/help" element={<Help />} />
+      
+      <Route path="/" element={<Header />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="services" element={<Services />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="partners" element={<Partners />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="feedback" element={<Feedback />} />
+        <Route path="careers" element={<Careers />} />
+        <Route path="help" element={<Help />} />
       </Route>
     </Routes>
 
-  </BrowserRouter>
+  // </BrowserRouter>
 
 )
 

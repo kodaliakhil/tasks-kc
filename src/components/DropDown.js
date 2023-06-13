@@ -121,18 +121,22 @@ export default function DropDown2() {
                 onBlur={() => setExpanded(false)}
                 style={{
                   borderRight: `${
-                    selectedOrders.length > 0 ? "none" : "solid 1px"
+                    selectedOrders.length > 0 ? "none" : "solid 1px #dadada"
                   }`,
                   backgroundColor: "#f5f5f5",
-                  borderTopLeftRadius: "10px",
-                  borderBottomLeftRadius: "10px",
-                  borderBottomRightRadius: selectedOrders.length === 0 ?"10px":"0",
-                  borderTopRightRadius: selectedOrders.length === 0 ?"10px":"0",
-                  
+                  borderTopLeftRadius: "3px",
+                  borderBottomLeftRadius: "3px",
+                  borderBottomRightRadius: selectedOrders.length === 0 ?"3px":"0",
+                  borderTopRightRadius: selectedOrders.length === 0 ?"3px":"0",
+                  borderColor:"#dadada",
                   height: "40px",
+                  fontWeight:"400",
+                  color:"black",
+                  fontFamily:"Roboto",
+                  height:"33px"
                 }}
               >
-                <option>
+                <option style={{}}>
                   {selectedOrders.length > 0
                     ? selectText()
                     : "Select an option"}
@@ -146,14 +150,16 @@ export default function DropDown2() {
                 onClick={onClickCrossButton}
                 style={{
                   backgroundColor: "transparent",
+                  
+                  border: "1px solid #dadada",
                   borderLeft: "none",
-                  borderWidth: "1px",
+
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                   backgroundColor: "#f5f5f5",
-                  borderTopRightRadius: "10px",
-                  borderBottomRightRadius: "10px",
+                  borderTopRightRadius: "3px",
+                  borderBottomRightRadius: "3px",
                 }}
               >
                 <RxCross2 />
@@ -166,6 +172,8 @@ export default function DropDown2() {
               display: "block",
               height: expanded ? "300px" : "0px ",
               border: expanded ? "1px solid #dadada" : "none",
+              boxShadow:"0px 2px 5px #dadada"
+
             }}
           >
             <div
@@ -173,9 +181,9 @@ export default function DropDown2() {
                 justifyContent: "center",
                 alignItems: "center",
                 border: "1px solid #dadada",
-                margin: "10px",
-                borderRadius: "10px",
-                padding: "5px",
+                margin: "5px",
+                borderRadius: "3px",
+                padding: "3px",
                 display: expanded ? "flex" : "none",
               }}
             >
@@ -189,10 +197,10 @@ export default function DropDown2() {
               ></input>
             </div>
             <div
-              style={{ overflowY: "scroll", height: expanded ? "75%" : "0%" }}
+              style={{ overflowY: "scroll", height: expanded ? "83%" : "0%" }}
             >
               {UniqueOrdersData.length > 0 ? (
-                <label htmlFor="select-all" style={{ fontWeight: "bold" }}>
+                <label htmlFor="select-all" >
                   <input
                     type="checkbox"
                     id="select-all"

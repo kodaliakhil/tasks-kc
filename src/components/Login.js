@@ -34,7 +34,7 @@ const Login = () => {
     }
 
     if(Cookies.get("jwt_token") !== undefined){
-        return <Navigate replace to="/tasks-kc" />
+        return <Navigate replace to="/" />
    } 
         return(
             <div className='login-container'>
